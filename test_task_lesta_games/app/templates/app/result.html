@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TF-IDF Results</title>
+</head>
+<body>
+    <h1>TF-IDF Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>TF</th>
+                <th>IDF</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for word in words %}
+            <tr>
+                <td>{{ word.word }}</td>
+                <td>{{ word.tf }}</td>
+                <td>{{ word.idf }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
